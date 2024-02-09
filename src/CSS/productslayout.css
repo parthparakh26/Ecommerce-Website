@@ -1,50 +1,62 @@
-.product---details{
+.product---details {
     margin-top: 100px;
     margin-left: 50px;
-    width: 1000px;
     display: flex;
-}
-
-.product---price{
+    flex-direction: row;
+    column-gap: 40px;
+  }
+  
+  .product-price {
     margin-left: 100px;
-}
-
-.product---path i{
-    color: grey;
-    font-size: small;
-}
-
-.about---product{
+  }
+  
+  .about-product {
     margin-top: 35px;
-}
-
-.product---title{
+  }
+  
+  .productlayout--title {
     white-space: nowrap;
-    margin-left: 0px;
-}
-
-.product---display{
-    width: 750px;
+  }
+  
+  .product-display {
+    width: 550px;
     height: 450px;
-}
-
-.product---totalcost{
+    overflow: hidden;
+  }
+  
+  .product-image {
+    max-width: 550px;
+    height: 350px;
+    display: block;
+  }
+  
+  .thumbnail-container {
     display: flex;
-    margin-left: -80px;
-}
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
 
-.quantity{
+  .thumbnail-image:hover{
+    color: rgba(255, 255, 255, 1); 
+    box-shadow: 0 5px 15px rgba(140, 235, 235,0.5);
+  }
+  
+  .thumbnail-image {
+    width: 80px; 
+    height: 70px;
+    margin-right: 5px; 
+    cursor: pointer;
+  }
+  
+  .product-info {
     display: flex;
-    margin-left: 15px;
-    margin-top: 35px;
-}
-
-.product---info{
-    margin-left: 40px;
-    margin-top: 100px;
-}
-
-.add---to---cart{
+    flex-direction: column;
+  }
+  
+  .add-to-cart {
     color: white;
     background-color: rgb(10, 162, 147);
     border: none;
@@ -52,49 +64,27 @@
     width: 100px;
     height: 30px;
     cursor: pointer;
-}
+    margin-top: 10px;
+  }
+  
+  .quantity {
+    display: flex;
+    margin-top: 35px;
+  }
 
-.product---image{
-    height: 450px;
-    width: 750px;
-}
-
-.product---desc{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.button---for---cart{
-    margin-top: 50px;
-}
-
-.quantity---label{
-    margin-left: 20px;
-}
-
-.increment---qty{
+  
+  .increment-qty,
+  .decrement-qty {
     color: white;
     background-color: rgb(10, 162, 147);
     cursor: pointer;
     border: none;
     height: 30px;
     border-radius: 5px;
-    margin-top: 10px;
-}
-
-.decrement---qty{
-    color: white;
-    background-color: rgb(10, 162, 147);
-    cursor: pointer;
-    border: none;
-    height: 30px;
-    border-radius: 5px;
-    margin-top: 10px;
-    width: 20px;
-    margin-left: 30px;
-}
-
-.qty---counter{
+  }
+  
+  .qty-counter {
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 10px;
-}
+  }
+  

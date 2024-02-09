@@ -10,6 +10,7 @@ export const StateContext = ({ children }) => {
     const [quantity, setquantity] = useState(1);
     const [asc, setasc] = useState(false);
     const [desc, setdesc] = useState(false);
+    const [selectedBrands, setSelectedBrands] = useState([]);
 
   let foundProduct;
   let index;
@@ -88,7 +89,13 @@ function descending(){
   setasc(false);
 }
 
-
+const handleClickOnSelectedProducts = (brand) => {
+  if (selectedBrands.includes(brand)) {
+    setSelectedBrands(selectedBrands.filter(item => item !== brand)); 
+  } else {
+    setSelectedBrands([...selectedBrands, brand]); 
+  }
+};
 
 
   return (
@@ -100,6 +107,7 @@ function descending(){
         totalPrice,
         totalQuantities,
         quantity,
+        selectedBrands,
         increment,
         decrement,
         onAdd,
@@ -111,7 +119,9 @@ function descending(){
         setasc,
         setdesc,
         ascending,
-        descending
+        descending,
+        setSelectedBrands,
+        handleClickOnSelectedProducts
       }}
     >
       {children}

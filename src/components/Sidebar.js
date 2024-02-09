@@ -1,5 +1,6 @@
 import {React,useState} from 'react'
 import '../CSS/sidebar.css'
+import ProductFilteringButtons from './ProductFilteringButtons'
 import { useStateContext } from '../context/StateContext'
 
 export const Sidebar = () => {
@@ -7,6 +8,7 @@ export const Sidebar = () => {
 
   return (
     <div className='sidebar'>
+      <ProductFilteringButtons />
       <div className='sorting--filtering'>
         <div className='sorting'>
           <button className='low--high' onClick={ascending}>Low to High</button>

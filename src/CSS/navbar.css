@@ -74,10 +74,12 @@ h4:hover{
     height: 36px;
     width: 30px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-right: 50px;
     background-color:  rgb(10, 162, 147);
     cursor: pointer;
     border: none;
+    align-items:center;
+    justify-content: center;
 }
 
 .cart-annotation{
@@ -89,6 +91,7 @@ h4:hover{
 .auth-annotation{
     color:white;
     margin-top: 5px;
+    margin-left: auto;
 }
 
 .search--section{
@@ -111,7 +114,7 @@ h4:hover{
 }
 
 .login-register-option{
-    margin-left: -60px;
+    margin-left: -110px;
     margin-top: 10px;
     position: absolute;
 }
@@ -131,7 +134,7 @@ h4:hover{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding:10px;
     display: inline-block;
-    min-width: 100px;
+    min-width: 120px;
 }
 
 .list:hover{

@@ -20,6 +20,11 @@ function Cart(){
             <div >
               <h3 className='sub--total'>Subtotal:${totalPrice}</h3>
            </div>
+           {cartItems.length > 0 && (
+             <div>
+               <button className="checkout-button">Checkout</button>
+             </div>
+           )}
           </div>
           <div className='background'>
              {cartItems.map((item)=>(

@@ -125,3 +125,15 @@ p{
     display: flex;
     flex-direction: column;
 }
+
+.checkout-button{
+   border:none;
+   background-color: rgb(237, 235, 232);
+   cursor: pointer;
+   color: rgb(48, 192, 144);
+   margin-left: 20px;
+   border-radius: 5px;
+   height: 30px;
+   font-weight: 700;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
